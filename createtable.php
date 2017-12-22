@@ -7,19 +7,8 @@ id INT NOT NULL IDENTITY(1,1),
 PRIMARY KEY(id),
 name VARCHAR(30),
 email VARCHAR(30),
-country_name VARCHAR(30)";
-$conn->query($sql);
-$sql = "INSERT INTO country (id_country, country_name) VALUES
-(1,"Moskow"),
-(2,"St.Petersburg"),
-(3,"Novosibirsk"),
-(4,"Ecaterenburg"),
-(5,"Novgorod"),
-(6,"Kazan"),
-(7,"Chelyabinsk"),
-(8,"Omsk"),
-(9,"Samara"),
-(10,"Rostov na Donu");
+country VARCHAR(30)";
+
 birthday VARCHAR(10),
 date DATE)";
 $conn->query($sql);
