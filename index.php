@@ -28,12 +28,14 @@ email address, then click <strong>Submit</strong>
 to register.</p>
 <form method="post" action="index.php"
 enctype="multipart/form-data" >
-Name <input type="text"
-name="name" id="name"/></br>
-Email <input type="text"
-name="email" id="email"/></br>
+<input type ="text" name ="name" id ="name" placeholder ="Введите ваше имя">
+<input type ="text" name ="email" id ="email" placeholder ="Ваш еmail..">
+<input type ="text" name ="country" id ="country" placeholder ="Страна">
 
 
+<input type ="submit" name ="submit" class ="btn" value ="Отправить">
+
+<input type="submit" name="filter" class="btn" value="Фильтр">
 
 
 
@@ -150,10 +152,9 @@ echo "<th>Date</th></tr>";
 foreach($registrants as $registrant) {
 echo "<td>".$registrant['name']."</td>";
 echo "<td>".$registrant['email']."</td>";
-echo "<td>".$registrant['gender']."</td>";
-echo "<td>".$registrant['age']."</td>";
+
 echo "<td>".$registrant['country']."</td>";
-echo "<td>".$registrant['birthday']."</td>";
+
 echo "<td>".$registrant['date']."</td></tr>";
 }
 echo "</table>";
