@@ -36,5 +36,15 @@ name="email" id="email"/></br>
 <input type="submit"
 name="submit" value="Submit" />
 </form>
+<?php
+
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq";
+$username = "ramil";
+$password = "Rosbank1997";
+
+try {
+$conn = new PDO($dsn, $username, $password);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
 
 
