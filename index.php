@@ -33,8 +33,8 @@
 </body>
 </html>
 <?php
-$dsn = "sqlsrv:server = tcp:ramil.database.windows.net,1433; Database = rrr";
-$username = "ramil";
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom";
+$username = "rom";
 $password = "Rosbank1997";
 try {
 $conn = new PDO($dsn, $username, $password);
@@ -51,8 +51,8 @@ die(print_r($e));
 $conn = null;
 ?>
 <?php
-$dsn = "sqlsrv:server = tcp:ramil.database.windows.net,1433; Database = rrr";
-$username = "ramil";
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom";
+$username = "rom";
 $password = "Rosbank1997";
 try {
 $conn = new PDO($dsn, $username, $password);
@@ -97,10 +97,9 @@ $conn = null;
 
 <?php
 
-$dsn = "sqlsrv:server = tcp:ramil.database.windows.net,1433; Database = rrr";
-$username = "ramil";
+$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom";
+$username = "rom";
 $password = "Rosbank1997";
-
 try {
 $conn = new PDO($dsn, $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
