@@ -33,17 +33,14 @@ name="name" id="name"/></br>
 Email <input type="text"
 name="email" id="email"/></br>
 
-
-
-
-
 <input type="submit"
 name="submit" value="Submit" />
 </form>
+
 <?php
 try {
-$conn = new PDO("sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom", "Rosbank1997");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = new PDO("sqlsrv:server = tcp:caramba878.database.windows.net,1433; Database = Caramba878", "Caramba878", "535412danNN");
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
 print("Error connecting to SQL Server.");
@@ -57,7 +54,7 @@ $date = date("Y-m-d");
 
 // Insert data
 $sql_insert =
-"INSERT INTO registration_tbl (name, email, date)
+"INSERT INTO registration_too (name, email, date)
 VALUES (?,?,?)";
 $stmt = $conn->prepare($sql_insert);
 $stmt->bindValue(1, $name);
@@ -71,7 +68,7 @@ die(var_dump($e));
 }
 echo "<h3>Your're registered!</h3>";
 }
-$sql_select = "SELECT * FROM registration_tbl";
+$sql_select = "SELECT * FROM registration_too";
 $stmt = $conn->query($sql_select);
 $registrants = $stmt->fetchAll();
 if(count($registrants) > 0) {
