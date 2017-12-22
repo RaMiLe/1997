@@ -39,7 +39,7 @@ name="submit" value="Submit" />
 <?php
 
 $dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq";
-$username = "ramil";
+$username = "rom";
 $password = "Rosbank1997";
 
 try {
@@ -91,7 +91,7 @@ $conn = null;
 <?php
 
 $dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq";
-$username = "ramil";
+$username = "rom";
 $password = "Rosbank1997";
 try {
 $conn = new PDO($dsn, $username, $password);
