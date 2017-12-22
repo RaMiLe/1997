@@ -32,6 +32,9 @@ Name <input type="text"
 name="name" id="name"/></br>
 Email <input type="text"
 name="email" id="email"/></br>
+  <input type="submit"
+name="submit" value="Submit" />
+</form>
 <?php
 
 $dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq";
