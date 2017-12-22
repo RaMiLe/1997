@@ -36,6 +36,7 @@ enctype="multipart/form-data" >
 <div>
 <input type ="submit" name ="submit" class ="btn" value ="Отправить">
 <input type ="submit" name ="clear" class ="btn" id = "clr" value ="Очистить"></pre>
+  <input type="submit" name="filter" class="btn" value="Фильтр">
 <?php
 
 $dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq";
