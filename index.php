@@ -28,13 +28,14 @@ email address, then click <strong>Submit</strong>
 to register.</p>
 <form method="post" action="index.php"
 enctype="multipart/form-data" >
-Name <input type="text"
-name="name" id="name"/></br>
-Email <input type="text"
-name="email" id="email"/></br>
-  <input type="submit"
-name="submit" value="Submit" />
-</form>
+<input type ="text" name ="name" id ="name" placeholder ="Введите ваше имя">
+<input type ="text" name ="email" id ="email" placeholder ="Ваш еmail..">
+<input type ="text" name ="age" id ="age" placeholder ="Ваш возраст..">
+<input type ="text" name ="country" id ="country" placeholder ="Страна">
+<input type ="date" name ="birthday" id ="birthday" placeholder ="Дата рождения">
+<div>
+<input type ="submit" name ="submit" class ="btn" value ="Отправить">
+<input type ="submit" name ="clear" class ="btn" id = "clr" value ="Очистить"></pre>
 <?php
 
 $dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq";
