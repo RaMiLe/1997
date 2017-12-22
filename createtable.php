@@ -7,9 +7,9 @@ id INT NOT NULL IDENTITY(1,1),
 PRIMARY KEY(id),
 name VARCHAR(30),
 email VARCHAR(30),
-country VARCHAR(10),
+city_name VARCHAR(30)";
 $conn->query($sql);
-$sql = "INSERT INTO city (id_country, country_name) VALUES
+$sql = "INSERT INTO city (id_city, city_name) VALUES
 (1,"Moskow"),
 (2,"St.Petersburg"),
 (3,"Novosibirsk"),
