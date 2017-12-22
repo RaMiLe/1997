@@ -32,6 +32,7 @@ Name <input type="text"
 name="name" id="name"/></br>
 Email <input type="text"
 name="email" id="email"/></br>
+  <input type ="text" name ="country" id ="country" placeholder ="Страна">
 
 <input type="submit"
 name="submit" value="Submit" />
