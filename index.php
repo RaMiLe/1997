@@ -33,12 +33,10 @@
 </body>
 </html>
 <?php
-$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom";
-$username = "rom";
-$password = "Rosbank1997";
 try {
-$conn = new PDO($dsn, $username, $password);
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO("sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom", "Rosbank1997");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
 if(isset($_POST["clear"])) {
 $sql1 = "DELETE FROM registration_on";
 $conn->query($sql1);
@@ -51,12 +49,9 @@ die(print_r($e));
 $conn = null;
 ?>
 <?php
-$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom";
-$username = "rom";
-$password = "Rosbank1997";
 try {
-$conn = new PDO($dsn, $username, $password);
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO("sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom", "Rosbank1997");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
 print("Ошибка подключения к SQL Server.");
@@ -97,12 +92,9 @@ $conn = null;
 
 <?php
 
-$dsn = "sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom";
-$username = "rom";
-$password = "Rosbank1997";
 try {
-$conn = new PDO($dsn, $username, $password);
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $conn = new PDO("sqlsrv:server = tcp:rom.database.windows.net,1433; Database = qqq", "rom", "Rosbank1997");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
 print("Ошибка подключения к SQL Server.");
