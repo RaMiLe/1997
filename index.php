@@ -47,4 +47,6 @@ print("Ошибка подключения к SQL Server.");
 die(print_r($e));
 }
 $conn = null;
+        echo "<tr><th>Name</th>";
+echo "<th>Email</th>";
 ?>
