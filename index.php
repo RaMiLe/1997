@@ -38,11 +38,7 @@ enctype="multipart/form-data" >
 <input type ="submit" name ="clear" class ="btn" id = "clr" value ="Очистить"></pre>
 <input type="submit"
 name="submit" value="Submit" />
-  <select name ="gender" class ="gen">
-<option value ="">All</option>
-<option value ="Man" <?php if($gender == 'Man'){echo 'selected';}?»Man</option>
-<option value ="Woman" <?php if($gender == 'Woman'){echo 'selected';}?»Woman</option>
-</select>
+ 
 <input type="submit" name="filter" class="btn" value="Фильтр">
 </form>
 <?php
