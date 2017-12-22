@@ -28,14 +28,11 @@ email address, then click <strong>Submit</strong>
 to register.</p>
 <form method="post" action="index.php"
 enctype="multipart/form-data" >
-<input type ="text" name ="name" id ="name" placeholder ="Введите ваше имя">
-<input type ="text" name ="email" id ="email" placeholder ="Ваш еmail..">
+Name <input type="text"
+name="name" id="name"/></br>
+Email <input type="text"
+name="email" id="email"/></br>
 
-<input type ="text" name ="country" id ="country" placeholder ="Страна">
-
-<div>
-<input type ="submit" name ="submit" class ="btn" value ="Отправить"> 
-  <input type="submit" name="filter" class="btn" value="Фильтр">
 
 
 
