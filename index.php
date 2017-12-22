@@ -107,10 +107,10 @@ $sql_select = "SELECT * FROM registration_on";
 $stmt = $conn->query($sql_select);
 $stmt->execute();
 if(isset($_POST['filter'])) {
-$gender = $_POST['gender'];
-$sql_select = "SELECT * FROM registration_on WHERE gender like :gender";
+$country = $_POST['country'];
+$sql_select = "SELECT * FROM registration_on WHERE gender like :country";
 $stmt = $conn->prepare($sql_select);
-$stmt->execute(array(':gender'=>$gender.'%'));
+$stmt->execute(array(':country'=>$country.'%'));
 }
 $registrants = $stmt->fetchAll();
 if(count($registrants) > 0) {
